@@ -3,103 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Monekasri T | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body>
-    <!-- NAVIGATION -->
-    <header>
-        <nav>
-            <h1>Your Name</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="light">
 
-    <!-- HERO / ABOUT -->
-    <section id="about" class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h2>Hello, I'm <span>Your Name</span></h2>
-                <p>Professional AI & Software Developer specializing in Python, SQL, Java, Web Development, and Data Analysis. I build clean, efficient, and visually stunning projects.</p>
-                <a href="#projects" class="btn">View My Work</a>
-            </div>
-            <div class="hero-img">
-                <img src="assets/images/profile.jpg" alt="Your Name">
+<!-- DARK MODE TOGGLE -->
+<button id="darkModeToggle" class="dark-toggle"><i class="fas fa-moon"></i></button>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <h1>Monekasri T</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="hero">
+    <div class="container">
+        <div class="hero-text">
+            <h2>Hello, I'm <span>Monekasri T</span></h2>
+            <p>AI & Data Science Engineering student passionate about building intelligent systems and learning advanced AI technologies.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-img">
+            <img src="assets/images/profile.jpg" alt="Profile Image">
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="assets/images/project1.png" alt="Project 1">
+            <div class="project-content">
+                <h3>AI Chatbot</h3>
+                <p>Simple AI chatbot using Python and NLP for automated conversation.</p>
+                <a href="#" class="btn">GitHub <i class="fab fa-github"></i></a>
             </div>
         </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="assets/images/project1.png" alt="Project 1">
-                <div class="project-content">
-                    <h3>Project 1</h3>
-                    <p>AI Chatbot built with Python and NLP techniques.</p>
-                    <a href="#" class="btn">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="assets/images/project2.png" alt="Project 2">
-                <div class="project-content">
-                    <h3>Project 2</h3>
-                    <p>Data Analysis Dashboard using Python, SQL & Plotly.</p>
-                    <a href="#" class="btn">View on GitHub <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <h4>Python</h4>
-                <div class="skill-bar"><span style="width: 95%"></span></div>
-            </div>
-            <div class="skill">
-                <h4>SQL</h4>
-                <div class="skill-bar"><span style="width: 90%"></span></div>
-            </div>
-            <div class="skill">
-                <h4>Java</h4>
-                <div class="skill-bar"><span style="width: 85%"></span></div>
-            </div>
-            <div class="skill">
-                <h4>Web Development</h4>
-                <div class="skill-bar"><span style="width: 95%"></span></div>
-            </div>
-            <div class="skill">
-                <h4>AI & Data Analysis</h4>
-                <div class="skill-bar"><span style="width: 90%"></span></div>
+        <div class="project-card">
+            <img src="assets/images/project2.png" alt="Project 2">
+            <div class="project-content">
+                <h3>Data Analysis Dashboard</h3>
+                <p>Interactive dashboard for analyzing datasets with Python & Plotly.</p>
+                <a href="#" class="btn">GitHub <i class="fab fa-github"></i></a>
             </div>
         </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-container">
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></p>
+        <div class="project-card">
+            <img src="assets/images/project3.png" alt="Project 3">
+            <div class="project-content">
+                <h3>ML Model</h3>
+                <p>Machine Learning model predicting trends using AI algorithms.</p>
+                <a href="#" class="btn">GitHub <i class="fab fa-github"></i></a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Your Name. All Rights Reserved.</p>
-    </footer>
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Data Analysis</li>
+            <li>AI Model Deployment</li>
+            <li>Web Development (HTML, CSS, JS)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="resume">
+    <h2 class="section-title">Resume</h2>
+    <p>You can download my resume below:</p>
+    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-container">
+        <p>Email: <a href="mailto:mmonekasri@gmail.com">mmonekasri@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Monekasri">github.com/Monekasri</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/monekasri-monekasri-b2a4ba320/">linkedin.com/in/monekasri-monekasri</a></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Monekasri T. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
