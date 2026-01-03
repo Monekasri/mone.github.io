@@ -9,6 +9,13 @@ body {
     line-height: 1.6;
     background: #f4f7f8;
     color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #0f172a;
+    color: #f4f7f8;
 }
 
 /* HEADER */
@@ -27,7 +34,6 @@ header nav {
 }
 header nav h1 {
     font-weight: 700;
-    font-size: 1.8rem;
 }
 header nav ul {
     display: flex;
@@ -43,7 +49,22 @@ header nav ul li a:hover {
     color: #3b82f6;
 }
 
-/* HERO / ABOUT */
+/* DARK MODE BUTTON */
+.dark-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1001;
+}
+
+/* HERO */
 .hero {
     display: flex;
     align-items: center;
@@ -101,7 +122,6 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #0f172a;
 }
 
 /* PROJECTS */
@@ -119,6 +139,9 @@ header nav ul li a:hover {
     width: 300px;
     transition: 0.3s;
 }
+body.dark .project-card {
+    background: #1e293b;
+}
 .project-card:hover {
     transform: translateY(-10px);
 }
@@ -132,39 +155,32 @@ header nav ul li a:hover {
 }
 .project-content h3 {
     margin-bottom: 0.5rem;
-    color: #0f172a;
 }
 .project-content p {
     margin-bottom: 1rem;
-    font-size: 0.95rem;
-    color: #555;
 }
 .project-content a {
     text-decoration: none;
 }
 
 /* SKILLS */
-.skills-container {
-    max-width: 800px;
-    margin: auto;
+.skills-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
-.skill {
-    margin-bottom: 1rem;
+.skills-container li {
+    background: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
 }
-.skill h4 {
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-}
-.skill-bar {
-    background: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.skill-bar span {
-    display: block;
-    height: 15px;
-    background: linear-gradient(90deg, #3b82f6, #06b6d4);
-    border-radius: 5px;
+
+/* RESUME */
+.resume {
+    text-align: center;
+    padding: 2rem;
 }
 
 /* CONTACT */
@@ -175,11 +191,6 @@ header nav ul li a:hover {
 }
 .contact-container p {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-.contact-container a {
-    color: #3b82f6;
-    text-decoration: none;
 }
 
 /* FOOTER */
